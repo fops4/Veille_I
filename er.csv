@@ -1,0 +1,94 @@
+Titre,Date,Contenu,Lien Video,Etat
+OpenAI renoue avec l'ouverture avec deux modèles open-weight : GPT-OSS-120B et GPT-OSS-20B,06/08/2025,"OpenAI a annoncé hier soir la sortie de deux modèles de langage open-weight, gpt-oss-120B et gpt-oss-20B, disponibles sous licence Apache 2.0. Cette démarche marque un tournant pour l’entreprise, qui n’avait plus proposé de LLM open-weight depuis GPT-2. Les poids des modèles sont accessibles publiquement sur Hugging Face.
+Des modèles conçus pour le raisonnement et l’efficacité
+Les deux modèles reposent sur une architecture Mixture-of-Experts (MoE), avec respectivement 117 milliards et 21 milliards de paramètres au total, mais n’activant qu’une fraction (5,1B pour le 120B, 3,6B pour le 20B) à chaque token. Tous deux supportent une longueur de contexte étendue à 128 000 tokens.
+OpenAI revendique des performances compétitives sur les tâches de raisonnement. GPT-OSS-120B atteindrait des résultats proches de o4-mini sur les benchmarks classiques (MMLU, HLE, TauBench…), tout en étant exécutable sur un seul GPU de 80 Go. Le modèle 20B, plus léger, est annoncé comme fonctionnant avec 16 Go de mémoire, ce qui le rend potentiellement utilisable en local ou sur des appareils embarqués.
+GPT-OSS est testable ici
+Compatibilité et cas d’usage
+Ces modèles sont compatibles avec l’API Responses d’OpenAI, et intègrent nativement la prise en charge du Chain-of-Thought (CoT), des appels de fonctions, des sorties structurées et de l’ajustement de l’effort de raisonnement selon la tâche.
+OpenAI cible des usages dans les workflows agentiques, le développement d’assistants intelligents, la recherche, ou encore le déploiement en local pour des raisons de sécurité ou de souveraineté des données. Des partenaires comme AI Sweden, Orange et Snowflake ont été impliqués en amont du lancement pour explorer des cas concrets d’intégration.
+Sécurité et évaluation des risques
+OpenAI a longtemps expliqué son pivot vers des modèles fermés par des enjeux sécuritaires. La sécurité a donc été au coeur des considérations de la société, et a été à l'origine de plusieurs reports de cette livraison de modèles Open Weight tant attendus. OpenAI affirme aujourd'hui avoir intégré des mécanismes avancés de filtrage et de post-formation pour réduire les risques liés à la mise à disposition publique. Une évaluation par des experts externes a notamment été menée sur des versions délibérément fine-tunées de manière malveillante (cybersécurité, biologie), dans le cadre du Preparedness Framework d’OpenAI.
+Selon l’entreprise, même dans ces scénarios extrêmes, les modèles n’atteindraient pas des niveaux de capacités préoccupants. Un challenge de red teaming doté de 500 000 $ a par ailleurs été lancé sur Kaggle pour encourager la détection collaborative de vulnérabilités.
+Un retour maîtrisé à l’open source ?
+Ce lancement soulève plusieurs questions. D’une part, il témoigne d’une volonté de rééquilibrer l’offre entre modèles propriétaires puissants et alternatives open source. D’autre part, il permet à OpenAI de garder une longueur d’avance technique tout en cadrant les usages, en fixant de nouveaux standards de sécurité pour l’open-weight.
+La publication des poids sous licence permissive, l’outillage mis à disposition (inférences optimisées, harmony renderer, support PyTorch et Metal…), ainsi que les partenariats avec Azure, Hugging Face ou Vercel visent à faciliter l’adoption dans un écosystème de plus en plus fragmenté.
+Reste à voir dans quelle mesure ces modèles seront repris par la communauté, notamment face aux alternatives comme Mistral, LLaMA, Mixtral ou Yi, et si leur ouverture effective (notamment la possibilité de fine-tuning libre) suffira à répondre aux attentes des chercheurs et développeurs.
+ 
+Découvrez les fiches modèles sur Hugging Face :
+https://huggingface.co/openai/gpt-oss-20b
+https://huggingface.co/openai/gpt-oss-120b
+ 
+ 
+
+
+                        Cet article publirédactionnel est publié dans le cadre d'une collaboration commerciale",,non traité
+Festival AI4GOOD : démocratiser l’IA au service des jeunes et du développement durable,06/08/2025,"Lancé en 2024 à l’île Maurice par Charlotte Govin, le Festival AI4GOOD ne se contente pas de célébrer la créativité assistée par l’IA générative. Il ambitionne d’en faire un levier d’inclusion et d’autonomisation, en dotant les jeunes, notamment ceux issus de régions sous-représentées comme l’Afrique ou le Pacifique, des moyens de s’approprier ces technologies pour concevoir des solutions concrètes, adaptées à leurs réalités locales.
+
+
+
+
+Dès sa première édition, l’initiative a mis l’accent sur le continent africain. Avec 60 % de sa population âgée de moins de 25 ans, l’Afrique recèle un immense vivier de talents. Mais dans de nombreux pays, les infrastructures numériques, les ressources éducatives et la connectivité Internet restent inégalement réparties, en particulier dans les zones rurales, limitant l’accès aux compétences numériques.
+Face à ce constat, Charlotte Govin a créé une organisation à but non lucratif pour transmettre aux jeunes Africains des compétences pratiques, qui leur permettront de contribuer à une croissance numérique responsable. Sa démarche s’inscrit pleinement dans les Objectifs de Développement Durable (ODD), en particulier ceux liés à l’éducation de qualité, l’égalité des genres, la lutte contre les inégalités numériques et le changement climatique.
+Lors de la première édition en 2024, 80 jeunes de l’île Maurice et de Madagascar ont présenté un court-métrage réalisé avec des outils d’IA générative. En 2025, le programme s’est étendu à d’autres territoires : Sénégal, Afrique du Sud, Comores, Nouvelle-Calédonie...
+La compétition s’adresse aux 12–25 ans, invités à concourir localement cette année dans deux catégories : court-métrage et jeu vidéo. Deux thématiques leur ont été proposées : “Good Tech, Bad Tech”, une réflexion sur les dilemmes éthiques liés à la technologie, et “Superhero Everyday”, une mise en lumière des héros du quotidien.
+Les participants disposaient de trois semaines pour produire leur œuvre. L’organisation leur a fourni gratuitement les licences des outils d’IA nécessaires, ainsi que des sessions de formation (en direct ou en replay). L'accompagnement d'un mentor était également proposé, s'ils le désiraient. 
+Chaque projet lauréat au niveau local a été ensuite évalué par un jury international. Dans la catégorie des 20–25 ans, c’est Vinciane Henintsoa qui a remporté la palme internationale grâce à un court-métrage ""impeccablement réalisé"" selon le jury, à la fois clair dans son message et subtil dans son traitement. Voir la vidéo.
+Fort de cette seconde édition réussie, le Festival AI4GOOD ambitionne de devenir la plus grande initiative mondiale dédiée à la jeunesse et étendre sa présence dans plus de 50 villes dans les années à venir. Ce déploiement sera appuyé par la création d’une plateforme éducative ouverte, offrant à tous des ressources gratuites pour se former à l'IA.
+Il entend également peser dans les débats sur les politiques et l’éthique de l’IA.
+Pour retrouver d'autres courts-métrages présentés lors des festivals : AI4GOOD Festival - YouTube",https://www.youtube.com/embed/jm-uyAeSWzY,non traité
+Orange et OpenAI : une alliance stratégique pour une IA souveraine et responsable,06/08/2025,Contenu non trouvé,,non traité
+L’IA pour tous : le Groupe IGENSIA Education met la GenAI au cœur de ses parcours pédagogiques,04/08/2025,"Groupe indépendant et associatif à but non lucratif, fort de cinquante années d’expertise dans l’enseignement supérieur et la formation professionnelle, IGENSIA Education continue d'innover en intégrant, dès septembre prochain, un socle commun de formation à l’IA générative dans l’ensemble de ses cursus. Cette initiative vise à promouvoir une approche raisonnée et éthique des outils GenAI.
+Fondé en 1975 sous le nom d’Institut de Gestion Sociale (IGS), le Groupe IGENSIA Education s’est construit autour d’une mission fondatrice : proposer un modèle éducatif ouvert à tous, centré sur l’épanouissement et l’engagement des apprenants. Il articule son action autour de cinq pôles : écoles, alternance, formation continue, insertion-inclusion et orientation.
+Présent sur quatre campus en France (Paris, Lyon, Toulouse et Nanterre) et un cinquième à Casablanca, le Groupe accueille chaque année près de 15 000 apprenants, dont 9 300 alternants. Il s’appuie sur un réseau actif de plus de 10 000 entreprises partenaires, 80 000 alumni et des équipes pédagogiques issues à la fois du monde académique et de l’entreprise.
+Son offre de formation, qui s’étend de Bac à Bac+6, et jusqu’au Bac+8 avec le Doctorate in Business Administration (DBA), couvre un large éventail de filières : ressources humaines, commerce, finance, droit, immobilier, communication, informatique ou journalisme. Ces parcours sont déployés au sein d’écoles reconnues telles que IGS-RH, ISCPA, ICD, ESAM, IPI, IMSI ou encore l’American Business School of Paris. Le Groupe soutient également l’entrepreneuriat étudiant via son incubateur Why Not Factory, et développe des partenariats académiques internationaux en Europe, Afrique et Asie.
+Former les acteurs du monde de demain
+Avec ce socle commun de formation à l’IA, le Groupe ambitionne de développer l'esprit critique des apprenants, et encourager un usage éthique, responsable et frugal des outils GenAI.  
+Intégrée au programme transversal Questions du temps présent, cette formation de 15 heures s’articule autour de cinq modules :
+
+
+L’abécédaire de l’IA : compréhension des fondamentaux de l'IA (histoire, applications et enjeux contemporains) ; 
+
+
+Littératie IA : pour aller au-delà du simple usage et comprendre les limites et risques des outils GenAI ;
+
+
+Éthique et frugalité : introduire une réflexion critique sur les biais, les usages responsables et les impacts environnementaux ;
+
+
+Prompt engineering : former à la formulation efficace de requêtes, compétence déjà prisée dans de nombreux métiers ;
+
+
+Utilisation dans le parcours de formation : création d’assistants IA personnalisés sans codage pour soutenir l’apprentissage, de façon transparente et conforme à la charte IA du Groupe.
+
+
+Ce socle commun s’appuie sur le référentiel de compétences apprenantes de l’UNESCO, assurant une cohérence pédagogique et une reconnaissance internationale.
+Une déclinaison métier contextualisée
+Chaque école du Groupe adaptera la formation à son domaine. Ainsi, l’IMSI mobilisera l’IA autour des cas d’usage liés à l’immobilier, comme la recherche automatisée de biens ou la prédiction de tendances de marché. À l’ISCPA et à l’EMI, les thématiques porteront davantage sur la rédaction assistée, la vérification de contenus ou encore la détection de deepfakes.
+Cette démarche s’inscrit dans une stratégie d’intégration progressive de l’IA, amorcée en 2024 avec le changement de nom du Groupe :  170 enseignants et 70 collaborateurs, ont déjà été formés aux outils et aux enjeux éthiques, des chartes internes à destination des équipes pédagogiques et des étudiants ont été élaborées. Le Groupe s’est également appuyé sur des partenaires technologiques tels que la start-up BRIO, spécialisée dans les simulations d’entretien, ou Stellia, qui développe des assistants d’apprentissage personnalisés.
+Loren Resal, Directrice du développement digital et pédagogique du Groupe, résume cette ambition :
+""Pour le Groupe IGENSIA Education, il est important d’imaginer un futur où l’IA et la pédagogie se conjuguent pour révéler les talents. La démarche que nous menons en interne réaffirme notre rôle de former les acteurs de la métamorphose, en plaçant l’intelligence artificielle au service de la pédagogie, dans une logique d’innovation durable, responsable et surtout éthique"".",,non traité
+Nouvelle étape pour l'AI Act : les obligations pour les modèles d'IA à usage général sont entrées en vigueur,04/08/2025,"Les premières dispositions de l'AI Act, entré en vigueur en août 2024, concernant les systèmes d'IA à risque inacceptables ont commencé à être appliquées en février dernier. Malgré le moratoire ""Stop the Clock"" demandé par une cinquantaine d'entreprises de l’EU AI Champions Initiative sur la poursuite du déploiement du règlement, les obligations concernant les modèles d'IA à usage général (GPAI) sont effectives depuis samedi dernier.
+L’UE a été pionnière dans l'établissement d'un cadre réglementaire visant à réguler l’IA en fonction de son potentiel à causer des dommages. L'objectif de l'AI Act ou RIA est de garantir que les systèmes et modèles d’IA commercialisés au sein de l’UE soient utilisés de manière éthique, sûre et dans le respect des droits fondamentaux de l’UE.
+Les lignes directrices publiées par la Commission européenne le 18 juillet dernier clarifient l’application du champ d'application de la réglementation pour les modèles GPAI. Tout modèle d'IA affichant une capacité de calcul supérieure à 10²³ FLOPs (soit le volume d’opérations en virgule flottante mobilisées lors de l’entraînement), conçu sans finalité précise (prévisions météorologiques, jeux...) mais pouvant être réutilisé dans une large variété de contextes, sera présumé entrer dans cette catégorie. 
+Les obligations couvrent l’ensemble du cycle de vie des modèles, du pré-entraînement à la mise à disposition, en passant par les mises à jour et les modifications postérieures à la mise sur le marché. Leurs fournisseurs devront fournir:
+
+
+une documentation technique exhaustive, à destination des fournisseurs en aval intégrant le modèle dans leur système IA et, si demandée, au Bureau européen de l'IA (AI Office) ou aux autorités nationales compétentes. ;
+
+
+un résumé des données d'entraînement, selon le modèle standardisé que l'AI Office leur fournira ;
+
+
+mettre en place une politique sur le respect des droits d’auteur, alignée avec le droit européen.
+
+
+Le principe fondamental du règlement demeure inchangé :  plus le risque est élevé, plus les exigences sont fortes. Ces obligations sont renforcées pour les GPAI considérés à risque systémique, des modèles dépassant le seuil de 10²⁵ FLOPs cumulés. Ceux-ci devront faire l’objet de procédures de gestion des risques renforcées, notamment en matière de cybersécurité, de signalement des incidents graves, ou encore de tests continus. Une charge réglementaire estimée difficilement soutenable...
+Ce seuil n'est cependant pas rigide : une réévaluation des risques réels peut être demandée par les prestataires.
+Fournisseurs, modifications et statut open source
+Toute entreprise qui met un modèle sur le marché européen est considérée comme fournisseur, indépendamment du lieu de développement initial. Cependant, un acteur en aval qui a effectué une modification du modèle en utilisant plus d’un tiers de sa puissance de calcul initiale, est lui aussi considéré comme fournisseur et soumis aux obligations.
+Les modèles publiés sous licence libre et ouverte bénéficient d’un régime d’exemption partielle. À condition de respecter certains critères (absence de monétisation ou de collecte de données personnelles), ces modèles ne sont pas soumis aux obligations de documentation aux fournisseurs en aval ou aux autorités. Cependant, dès qu’ils franchissent le seuil de risque systémique, aucune exemption ne s’applique. 
+Code de bonnes pratiques
+Malgré leur entrée en vigueur le 2 août dernier, ces règles ne s'appliqueront qu’en août 2026 pour les nouveaux modèles, et en août 2027 pour les modèles existants. Cette progressivité, pilotée par le Bureau de l’IA, vise à laisser aux entreprises le temps de s’adapter.
+Pour aider les fournisseurs à s'y conformer, la Commission a publié, quelques jours avant ses directives, un code de bonnes pratiques. Ceux qui choisissent d'y adhérer bénéficieront d’une réduction de leur charge administrative et d’une sécurité juridique accrue par rapport à ceux qui prouveront leur conformité par d'autres moyens. Google, OpenAI, Mistral, Microsoft l'ont déjà fait tandis que Meta a refusé, invoquant des zones d’incertitudes juridiques et une extension injustifiée du cadre réglementaire.
+Les amendes prévues pour non-respect de ces obligations pourront atteindre 15 millions d'euros ou 3% du chiffre d'affaires mondial des entreprises. Chacun des États membres de l'UE doit notifier à la Commission les autorités de surveillance qui contrôleront les entreprises. Si aucune n'a été pour l'instant désignée par la France, la Cnil devrait jouer un rôle central, des instances sectorielles comme l'Arcom ou l'Anssi sont également envisagées.",,non traité

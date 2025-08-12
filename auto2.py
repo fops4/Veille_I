@@ -59,7 +59,13 @@ class VeilleMailer:
         email_recipient = os.getenv("EMAIL_RECIPIENT")
         email_password = os.getenv("EMAIL_PASSWORD")
         smtp_server = os.getenv("SMTP_SERVER")
-        smtp_port = int(os.getenv("SMTP_PORT"))
+        smtp_port_str = os.getenv("SMTP_PORT", "587")
+
+        try:
+            smtp_port = int(smtp_port_str)
+        except ValueError:
+            print(f"Erreur : SMTP_PORT invalide ('{smtp_port_str}'). Utilisation du port 587 par défaut.")
+            smtp_port = 587
 
         date_du_jour = datetime.now().strftime("%d/%m/%Y")
         sujet = f"Synthèse de veille IA du {date_du_jour}"

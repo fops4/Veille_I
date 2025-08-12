@@ -2,7 +2,7 @@ name: Run app.py every 7 days
 
 on:
   schedule:
-    - cron: "0 0 */7 * *"  # Tous les 7 jours à minuit UTC
+    - cron: "*/5 * * * *" # Tous les 7 jours à minuit UTC
 
 jobs:
   run-app:

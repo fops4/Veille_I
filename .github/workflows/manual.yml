@@ -1,33 +1,33 @@
-name: Run app.py every 7 days
+# name: Run app.py every 7 days
 
-on:
-  schedule:
-    - cron: "*/5 * * * *" # Tous les 7 jours à minuit UTC
+# on:
+#   schedule:
+#     - cron: "*/5 * * * *" # Tous les 7 jours à minuit UTC
 
-jobs:
-  run-app:
-    runs-on: ubuntu-latest
+# jobs:
+#   run-app:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
+#       - name: Set up Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: "3.10"
 
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+#       - name: Install dependencies
+#         run: |
+#           pip install --upgrade pip
+#           pip install -r requirements.txt
 
-      - name: Run app.py
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
-          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-        run: python app.py
+#       - name: Run app.py
+#         env:
+#           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+#           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
+#           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+#           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+#           SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+#           SMTP_PORT: ${{ secrets.SMTP_PORT }}
+#         run: python app.py
